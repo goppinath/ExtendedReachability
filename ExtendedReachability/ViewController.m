@@ -8,15 +8,27 @@
 
 #import "ViewController.h"
 
+#import "ExtendedReachability.h"
+
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController  {
+    
+    ExtendedReachability *googleReachability_;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    googleReachability_ = [ExtendedReachability reachabilityForInternetConnection];
+    
+    [googleReachability_ startNotifierWithReachabilityDidChangeHandler:^(ExtendedReachability *changedReachability) {
+        
+        NSLog(@"%d", [changedReachability currentReachabilityStatus]);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

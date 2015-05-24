@@ -14,6 +14,7 @@
 		7960C9591AF6026F0080BC62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7960C9581AF6026F0080BC62 /* Images.xcassets */; };
 		7960C95C1AF6026F0080BC62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7960C95A1AF6026F0080BC62 /* LaunchScreen.xib */; };
 		7960C9681AF6026F0080BC62 /* ExtendedReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7960C9671AF6026F0080BC62 /* ExtendedReachabilityTests.m */; };
+		7960C9781AF602FE0080BC62 /* ExtendedReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 7960C9771AF602FE0080BC62 /* ExtendedReachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7960C9611AF6026F0080BC62 /* ExtendedReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtendedReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7960C9661AF6026F0080BC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7960C9671AF6026F0080BC62 /* ExtendedReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtendedReachabilityTests.m; sourceTree = "<group>"; };
+		7960C9761AF602FE0080BC62 /* ExtendedReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedReachability.h; sourceTree = "<group>"; };
+		7960C9771AF602FE0080BC62 /* ExtendedReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		7960C94A1AF6026F0080BC62 /* ExtendedReachability */ = {
 			isa = PBXGroup;
 			children = (
+				7960C9711AF602B40080BC62 /* lib */,
 				7960C94F1AF6026F0080BC62 /* AppDelegate.h */,
 				7960C9501AF6026F0080BC62 /* AppDelegate.m */,
 				7960C9521AF6026F0080BC62 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				7960C9661AF6026F0080BC62 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7960C9711AF602B40080BC62 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7960C9761AF602FE0080BC62 /* ExtendedReachability.h */,
+				7960C9771AF602FE0080BC62 /* ExtendedReachability.m */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +234,7 @@
 			files = (
 				7960C9541AF6026F0080BC62 /* ViewController.m in Sources */,
 				7960C9511AF6026F0080BC62 /* AppDelegate.m in Sources */,
+				7960C9781AF602FE0080BC62 /* ExtendedReachability.m in Sources */,
 				7960C94E1AF6026F0080BC62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
